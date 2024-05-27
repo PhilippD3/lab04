@@ -31,14 +31,6 @@ jobs:
                 cmake ..
                 cmake --build .
 
-            - name: solver_lib
-              run: |
-                cd ${{ github.workspace }}/solver_lib/
-                rm -rf build
-                mkdir build && cd build
-                cmake ..
-                cmake --build .
-
             - name: solver_application
               run: |
                 cd ${{ github.workspace }}/solver_application/
